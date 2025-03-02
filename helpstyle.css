@@ -1,0 +1,334 @@
+@keyframes intro {
+    0% {transform: translateY(-100vh);}
+    100% {transform: translateY(0vh);}
+}
+@keyframes opacitykeyframe {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes rotating {
+    0%{transform: rotate(2deg);}
+    50%{transform: rotate(-2deg);}
+    100%{transform: rotate(2deg);}
+}
+body
+{
+    background-color: black;
+}
+*
+{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8vh;
+}
+.status
+{
+    z-index: 100;
+    animation: ease-in-out;
+    animation-name: opacitykeyframe;
+    animation-duration: 0.5s;
+    border-radius: 2vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    position: fixed;
+    height: 8vh;
+}
+.logomain img
+{
+    animation: rotnscale infinite 3s ease-in-out;
+    transition: cubic-bezier(1, 0, 0, 1);
+    width: 4vh;
+}
+.logomain
+{
+    padding: 1vh;
+    transition: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 0.25s;
+    user-select: none;
+    border-radius: 2vh;
+    background-color: white;
+    display: flex;
+    margin: 1vh;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logomain:hover
+{
+    cursor: pointer;
+    transition-duration: 0.25s;
+    transform: scale(1.10,1.10);
+}
+.logoarea
+{
+    width: 30vw;
+}
+.buttons
+{
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: flex-end;
+}
+.button
+{
+    padding: 1.5vh;
+    transition: cubic-bezier(1, 0, 0, 1);
+    cursor: default;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    margin-right: 3vh;
+    display: flex;
+    background-color: rgb(218, 218, 218);
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vh;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+.button:hover
+{
+    cursor: pointer;
+    transition: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 0.25s;
+    transform: scale(1.15,1.15);
+}
+.header
+{
+    animation: linear;
+    animation-name: opacitykeyframe;
+    animation-duration: 1s;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(rgb(150, 150, 150), rgb(50, 50, 50));
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.helpbutton
+{
+    margin: 1vh;
+    transition: 0.125s;
+    background-color: rgb(165, 165, 165);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1vh;
+    font-size: 1.7vh;
+    padding: 1vh;
+}
+.helpbutton:hover
+{
+    transition: 0.25s;
+    cursor: pointer;
+    color: gray;
+    background-color: rgb(36, 36, 36);
+    border-radius: 2vh;
+    font-size: 2vh;
+}
+.maintext
+{
+    text-align: center;
+    user-select: none;
+    animation: cubic-bezier(.15,.8,.26,.98);
+    animation-name: intro;
+    animation-duration: 1s;
+    transition-duration: 0.2s;
+    margin: 2vh;
+    font-size: 4vh;
+    font-weight: 600;
+    width: 100vw;
+}
+.maintext:hover
+{
+    font-weight: 800;
+    transition: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 0.2s;
+    font-size: 5vh;
+}
+.logo
+{
+    animation: cubic-bezier(.15,.8,.26,.98);
+    animation-name: intro;
+    animation-duration: 1s;
+    display: flex;
+    height: 50vh;
+    width: 60vw;
+    margin: 4vh;
+    align-items: center;
+    justify-content: right;
+}
+.mainpage
+{
+    animation: linear;
+    animation-name: opacitykeyframe;
+    animation-duration: 1s;
+    display: flex;
+    height: fit-content;
+    background: linear-gradient(rgb(50, 50, 50), white);
+    flex-direction: column;
+    align-items: center;
+}
+.title
+{
+    padding: 2vh;
+    transition: 0.25s;
+    user-select: none;
+    background-color: rgb(163, 163, 163);
+    border-radius: 3vh;
+    text-align: center;
+    display: flex;
+    font-size: 5vh;
+    font-weight: 700;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.title:hover
+{
+    padding: 3vh;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+.text
+{
+    text-align: center;
+    margin: 1vh;
+    font-weight: 400;
+    font-size: 2.5vh;
+}
+.hi
+{
+    transition: 0.25s;
+    text-align: center;
+    margin: 2vh;
+    font-weight: 600;
+    font-size: 3vh;
+}
+.hi:hover
+{
+    transition: 0.5s;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.2vh;
+}
+.section
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section img
+{
+    margin: 2vh;
+    border-radius: 3vh;
+    width: 50vw;
+    transition: 0.25s;
+}
+.section img:hover
+{
+    transition: 0.5s;
+    border-radius: 3vh;
+    width: 55vw;
+}
+.section .helptext
+{
+    margin: 2vh;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.5vh;
+}
+.navigation
+{
+    display: flex;
+    height: 30vh;
+    background: linear-gradient(rgb(125, 125, 125), rgb(25, 25, 25));
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.navigation a:hover
+{
+    font-size: 2vh;
+}
+.choose
+{
+    border-radius: 10vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2vh;
+}
+.choose .helpbut
+{
+    transition: 0.2s;
+    user-select: none;
+    border-radius: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2vh;
+    padding: 1vh;
+    background-color: white;
+}
+.choose .helpbut:hover
+{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: darkgray;
+    font-size: 2.5vh;
+}
+.choose .buttons
+{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.helpandquestions
+{
+    display: flex;
+    border-radius: 4vh;
+    background-color: gray;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.helpandquestions .text
+{
+    font-size: 3vh;
+}
+.helpandquestions a
+{
+    border-radius: 2vh;
+    color: white;
+    margin: 1vh;
+    padding: 1vh;
+    background-color: black;
+    font-size: 2vh;
+    transition: 0.2s;
+}
+.helpandquestions a:hover
+{
+    transition: 0.5s;
+    font-size: 3vh;
+}
