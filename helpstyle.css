@@ -253,7 +253,7 @@ a
 .navigation
 {
     display: flex;
-    height: 30vh;
+    height: 50vh;
     background: linear-gradient(rgb(125, 125, 125), rgb(25, 25, 25));
     justify-content: space-evenly;
     flex-direction: column;
@@ -262,6 +262,10 @@ a
 .navigation a:hover
 {
     font-size: 2vh;
+}
+.navigation .text
+{
+    font-size: 1.5vh;
 }
 .choose
 {

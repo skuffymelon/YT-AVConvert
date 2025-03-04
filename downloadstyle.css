@@ -201,6 +201,7 @@ a
 }
 .title:hover
 {
+    padding: 3vh;
     transition: 0.5s;
     background-color: rgb(255, 255, 255);
 }
@@ -255,6 +256,21 @@ a
 {
     color: white;
 }
+.dwnldabout a
+{
+    transition: 0.15s;
+    background-color: white;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+.dwnldabout a:hover
+{
+    transition: 0.25s;
+    background-color: black;
+    color: white;
+    padding: 1.25vh;
+    border-radius: 1vh;
+}
 .downloads
 {
     display: flex;
@@ -267,20 +283,7 @@ a
 .navigation
 {
     display: flex;
-    height: 30vh;
-    background: linear-gradient(rgb(125, 125, 125), rgb(25, 25, 25));
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.navigation a:hover
-{
-    font-size: 2vh;
-}
-.navigation
-{
-    display: flex;
-    height: 30vh;
+    height: 50vh;
     background: linear-gradient(rgb(125, 125, 125), rgb(25, 25, 25));
     justify-content: space-evenly;
     flex-direction: column;
@@ -289,4 +292,8 @@ a
 .navigation a:hover
 {
     font-size: 2vh;
+}
+.navigation .text
+{
+    font-size: 1.5vh;
 }
